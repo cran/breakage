@@ -1,0 +1,17 @@
+5841a787fd283690d46d5fad7fa6307c *DESCRIPTION
+e496bbd205c12c9feb724c6cf590854b *NAMESPACE
+663d1030cdecbbc52155ccd792b46ff1 *R/breakage.R
+fc56b900114c5a2a3d213074e2296fd2 *data/break.data.rda
+a63f50801f81d045f6c9e0e44861371f *man/apply.breaks.Rd
+500796945c6d65b36cfaa1f6055b9d72 *man/break.clust.Rd
+90af92b23c7098339b75867727774c8b *man/break.data.Rd
+3c4462f641b52433953bd092821abf24 *man/breakage-package.Rd
+3c8a148c905232304d5464312d81d48e *man/breakage.plot.Rd
+973624eb86997d8ba1ea78f9686d6b0f *man/err.breakage.Rd
+9a6826c469346ba481a891bf00deff33 *man/find.bottom.Rd
+4e11c39db43de3d025ddee4596d13675 *man/fit.breakage.Rd
+e77a52663df2e21929359ef0a5c6cae2 *man/fit.sensitivity.plot.Rd
+9b26547db58e0ab57765a4ee4559400a *man/resist.access.Rd
+1becb28fc5dea8ff152b7dc0e6700967 *man/resist.breakage.Rd
+e0d486e599087611bbdd4ca349f62dde *man/resist.cone.Rd
+179bc86f5b745b57d1d6fec9256af5ea *man/resist.total.Rd
