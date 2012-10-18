@@ -18,7 +18,7 @@ resist.cone(l, r1, r2, rho = 51)
 \seealso{\code{\link{resist.access}}, \code{\link{resist.total}}, \code{\link{resist.breakage}}}
 \examples{
 # resistance of truncated conical segment 30 microns long, with end radii 50nm and 500nm
-# filled with solution of resistivity 62 ohm cm
+# filled with solution of resistivity 64 ohm cm
 # converting result from ohms to megohms for readability
-resist.cone(l=30, r1=0.05, r2=0.5, rho=62) * 1e-6
+resist.cone(l=30, r1=0.05, r2=0.5, rho=64) * 1e-6
 }

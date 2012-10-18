@@ -19,8 +19,8 @@ range and collide with the cover slip surface and break, altering its resistance
   }
 }
 \source{
-Caldwell, M., Del Linz, S. J. L., Novak, P., Korchev Y. E., Smart, T. G. S. and Moss G. W. J. 2012
-A simple method for estimating the tip geometry of scanning ion conductance microscope pipettes.
+Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
+Method for estimating the tip geometry of scanning ion conductance microscope pipets.
 \emph{Anal. Chem.} (in press)
 }
 \examples{

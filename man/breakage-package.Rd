@@ -25,8 +25,8 @@ LazyLoad: \tab yes\cr
 Matthew Caldwell <m.caldwell@ucl.ac.uk>
 }
 \references{
-Caldwell, M., Del Linz, S. J. L., Novak, P., Korchev Y. E., Smart, T. G. S. and Moss G. W. J. 2012
-A simple method for estimating the tip geometry of scanning ion conductance microscope pipettes.
+Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
+Method for estimating the tip geometry of scanning ion conductance microscope pipets.
 \emph{Anal. Chem.} (in press)
 }
 \keyword{ package }
@@ -41,6 +41,6 @@ raw.points <- breakage.plot(break.data, mV=100)
 clustered <- break.clust(raw.points)
 
 # fit the tip geometry to the clustered points
-fit <- fit.breakage(clustered, rho=62)
+fit <- fit.breakage(clustered, rho=64)
 }
 }

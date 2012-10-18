@@ -17,7 +17,7 @@ resist.access(r, rho = 51)
 \author{Matthew Caldwell}
 \seealso{\code{\link{resist.access}}, \code{\link{resist.total}}, \code{\link{resist.breakage}}}
 \examples{
-# access resistance to a 50nm pipette tip in solution of resistivity 62 ohm cm
+# access resistance to a 50nm pipette tip in solution of resistivity 64 ohm cm
 # converting result from ohms to megohms for readability
-resist.access(r=0.05, rho=62) * 1e-6
+resist.access(r=0.05, rho=64) * 1e-6
 }

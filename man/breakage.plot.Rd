@@ -63,8 +63,8 @@ Other graphical parameters to be passed to the \code{\link{plot}} function.
   \item{Mohm}{The calculated pipette resistance in megohms. (Only present if \code{mV} was supplied.)}
 }
 \references{
-Caldwell, M., Del Linz, S. J. L., Novak, P., Korchev Y. E., Smart, T. G. S. and Moss G. W. J. 2012
-A simple method for estimating the tip geometry of scanning ion conductance microscope pipettes.
+Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
+Method for estimating the tip geometry of scanning ion conductance microscope pipets.
 \emph{Anal. Chem.} (in press)
 }
 \author{

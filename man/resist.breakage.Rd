@@ -25,8 +25,8 @@ SICM.  (See referenced paper for more details.)
 }
 \value{The calculated resistance, in megohms.  Note that conversion from ohms is done automatically here.}
 \references{
-Caldwell, M., Del Linz, S. J. L., Novak, P., Korchev Y. E., Smart, T. G. S. and Moss G. W. J. 2012
-A simple method for estimating the tip geometry of scanning ion conductance microscope pipettes.
+Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
+Method for estimating the tip geometry of scanning ion conductance microscope pipets.
 \emph{Anal. Chem.} (in press)
 }
 \author{Matthew Caldwell}
@@ -37,8 +37,8 @@ brks <- 0.1 * 0:150
 
 # calculate corresponding resistances for a pipette with initial
 # tip radius 50nm, half-cone angle 4 degrees, length 1mm
-# and filler resistivity 62 ohm cm
-res <- resist.breakage(brks, theta=4*pi/180, r=0.05, rho=62)
+# and filler resistivity 64 ohm cm
+res <- resist.breakage(brks, theta=4*pi/180, r=0.05, rho=64)
 
 # plot the predicted curve of resistance against breakage
 plot(res ~ brks, type="l", ylim=c(0, max(res)),

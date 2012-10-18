@@ -23,7 +23,7 @@ Matthew Caldwell
 \seealso{\code{\link{resist.access}}, \code{\link{resist.cone}}, \code{\link{resist.breakage}}}
 \examples{
 # total resistance for a 30 micron long pipette tip with a half-cone angle of 4 degrees
-# and a tip radius of 50nm, with a filler/bath resistivity of 62 ohm cm
+# and a tip radius of 50nm, with a filler/bath resistivity of 64 ohm cm
 # converting result from ohms to megohms for readability
-resist.total(r=0.05, l=30, theta=4*pi/180, rho=62) * 1e-6
+resist.total(r=0.05, l=30, theta=4*pi/180, rho=64) * 1e-6
 }

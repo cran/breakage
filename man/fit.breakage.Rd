@@ -46,8 +46,8 @@ Additional parameters passed to the plotting functions.
   \item{opt}{The result structure returned by \code{\link{optim}}.  If the optimisation failed, this may provide some useful information as to why.}
 }
 \references{
-Caldwell, M., Del Linz, S. J. L., Novak, P., Korchev Y. E., Smart, T. G. S. and Moss G. W. J. 2012
-A simple method for estimating the tip geometry of scanning ion conductance microscope pipettes.
+Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
+Method for estimating the tip geometry of scanning ion conductance microscope pipets.
 \emph{Anal. Chem.} (in press)
 }
 \author{Matthew Caldwell}
@@ -59,7 +59,7 @@ values of \code{r} and \code{theta} to physically plausible ranges.
 \examples{
 # fake up some breakage data
 brks <- sort(abs(0.5 + rnorm(n=15, sd=0.5) * 1:15))
-res <- resist.breakage(brks, theta=3*pi/180, r=0.04, rho=62) + rnorm(15)
+res <- resist.breakage(brks, theta=3*pi/180, r=0.04, rho=64) + rnorm(15)
 
 # fit it
 fit.breakage(list(x=brks, y=res))

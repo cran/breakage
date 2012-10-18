@@ -66,7 +66,7 @@ Any additional parameters to be passed to the main \code{contour} plot.
 \examples{
 # fake up some breakage data
 brks <- sort(abs(0.5 + rnorm(n=15, sd=0.5) * 1:15))
-res <- resist.breakage(brks, theta=3*pi/180, r=0.04, rho=62) + rnorm(15)
+res <- resist.breakage(brks, theta=3*pi/180, r=0.04, rho=64) + rnorm(15)
 dat <- list(x=brks, y=res)
 
 # fit it
