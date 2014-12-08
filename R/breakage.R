@@ -71,12 +71,17 @@ fit.breakage <- function ( data, start=list(theta=3*pi/180, r=0.05), rho=51, l=1
 				 function(p) {err.breakage(p, data, rho, l)},
 				 lower=c(0.1 * pi/180, 0.001),
 				 upper=c(20 * pi/180, 50),
+				 hessian=TRUE,
 				 method="L-BFGS-B")
 	if ( opt$convergence != 1 )
 	{
 		theta <- opt$par[1]
 		r <- opt$par[2]
 		err <- opt$value
+		
+		cvm <- solve(opt$hessian)
+		theta.sd <- sqrt(cvm[1,1])
+		r.sd <- sqrt(cvm[2,2])
 		
 		if ( do.plot )
 		{
@@ -91,7 +96,9 @@ fit.breakage <- function ( data, start=list(theta=3*pi/180, r=0.05), rho=51, l=1
 			points ( data, ... )
 		}
 		
-		return ( list(theta=theta, r=r, degrees=180*theta/pi, err=err, opt=opt) )
+		return ( list(theta=theta, r=r, degrees=180*theta/pi,
+					  theta.sd=theta.sd, r.sd=r.sd, degrees.sd=180*theta.sd/pi,
+					  err=err, opt=opt) )
 	}
 	else
 	{
@@ -287,7 +294,6 @@ breakage.plot <- function ( x,
 # choose an empty polygon to terminate
 break.clust <- function ( data, zero.invert=TRUE )
 {
-    require("Imap")
 	plot(Mohm ~ Z, data=data)
 	pts <- data[T,c("Z", "Mohm")]
 	

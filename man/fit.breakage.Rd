@@ -42,13 +42,16 @@ Additional parameters passed to the plotting functions.
   \item{theta}{The fitted estimate of the half-cone angle, in radians; or NA if the optimisation failed.}
   \item{r}{The fitted estimate of the tip inner radius, in microns; or NA if the optimisation failed.}
   \item{degrees}{The fitted estimate of the half-cone angle, in degrees; or NA if the optimisation failed.}
+  \item{theta.sd}{A crude estimate of the standard error in theta, calculated from the Hessian returned by \code{\link{optim}}; or NA if optimisation failed.}
+  \item{r.sd}{A crude estimate of the standard error in r, calculated from the Hessian returned by \code{\link{optim}}; or NA if optimisation failed.}
+  \item{degrees.sd}{A crude estimate of the standard error in degrees, calculated from the Hessian returned by \code{\link{optim}}; or NA if optimisation failed.}
   \item{err}{The residual sum of squares error between the fitted model predictions and the data; or NA if the optimisation failed.}
   \item{opt}{The result structure returned by \code{\link{optim}}.  If the optimisation failed, this may provide some useful information as to why.}
 }
 \references{
 Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
 Method for estimating the tip geometry of scanning ion conductance microscope pipets.
-\emph{Anal. Chem.} (in press)
+\emph{Anal. Chem.} 84(21):8980--8984
 }
 \author{Matthew Caldwell}
 \details{

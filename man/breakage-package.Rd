@@ -15,8 +15,8 @@ discussion of this technique.
 \tabular{ll}{
 Package: \tab breakage\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2012-06-19\cr
+Version: \tab 1.1\cr
+Date: \tab 2014-12-08\cr
 License: \tab Artistic 2.0\cr
 LazyLoad: \tab yes\cr
 }
@@ -27,7 +27,7 @@ Matthew Caldwell <m.caldwell@ucl.ac.uk>
 \references{
 Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
 Method for estimating the tip geometry of scanning ion conductance microscope pipets.
-\emph{Anal. Chem.} (in press)
+\emph{Anal. Chem.} 84(21):8980--8984
 }
 \keyword{ package }
 \examples{
@@ -36,7 +36,7 @@ data("break.data")
 
 # get the bottom points
 raw.points <- breakage.plot(break.data, mV=100)
-\donttest{
+\dontrun{
 # select the clusters
 clustered <- break.clust(raw.points)
 

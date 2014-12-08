@@ -27,7 +27,7 @@ SICM.  (See referenced paper for more details.)
 \references{
 Caldwell, M., Del Linz, S. J. L., Smart, T. G. S. and Moss, G. W. J. 2012
 Method for estimating the tip geometry of scanning ion conductance microscope pipets.
-\emph{Anal. Chem.} (in press)
+\emph{Anal. Chem.} 84(21):8980--8984
 }
 \author{Matthew Caldwell}
 \seealso{\code{\link{resist.access}}, \code{\link{resist.cone}}, \code{\link{resist.total}}}
